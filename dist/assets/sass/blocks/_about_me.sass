@@ -1,0 +1,56 @@
+.about_me
+    position: relative
+    padding-top: 86px
+
+    &__text
+        font-weight: 500
+        font-size: 16px
+        line-height: 25px
+    .container
+        display: grid
+        gap: 100px
+        grid-template-columns: 1.2fr 1fr
+    &__img
+        width: 100%
+    &__title
+        margin-top: 10px
+        @include line
+
+    &__subtitle
+        margin-top: 10px
+    &__item
+        width: 100%
+        display: grid
+        gap: 28px
+        grid-template-columns: auto auto
+        position: relative
+        visibility: hidden
+        transition: 0.5s all
+        transform: translateY(100%)
+        @include circle
+        &::before
+            top: 10px
+            left: 7px
+        &_active
+            visibility: visible
+            transform: none
+            &:nth-child(1)
+                animation: top 0.5s
+            &:nth-child(2)
+                animation: top 0.5s
+            &:nth-child(3)
+                animation: top 0.5s
+
+    &__icon
+        width: 30px
+        height: 30px
+        margin-top: 20px
+        margin-left: 20px
+        display: block
+    &__list
+        display: grid
+        gap: 40px
+        .title
+            line-height: 40px
+            font-size: 20px
+            color: $color

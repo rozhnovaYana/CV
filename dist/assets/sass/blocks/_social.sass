@@ -1,0 +1,25 @@
+.social
+    display: flex
+    width: 338px
+    justify-content: space-between
+    align-items: center
+    transform: rotate(-90deg) translateY(-50%)
+    position: fixed
+    top: 40%
+    color: $color
+    z-index: 2
+    left: -80px
+    &__line
+        height: 70px
+        border: 2px solid $color
+        transform: rotate(90deg)
+        width: 0px
+    &__link,a
+        color: $color
+        text-decoration: none
+        cursor: pointer
+        &:hover
+            text-decoration: none
+            color: black
+        span
+            font-size: 20px

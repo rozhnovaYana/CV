@@ -1,0 +1,39 @@
+.thank
+    &__img
+        width: 80%
+    &__wrapper
+        position: fixed
+        top: 0
+        left: 0
+        width: 100vw
+        height: 100vh
+        background: rgba(53, 53, 53, 0.75)
+        display: flex
+        justify-content: center
+        align-items: center
+        z-index: 5
+        visibility: hidden
+        transition: 0.5s all
+    &__windows
+        width: 40%
+        height: 50%
+        background: $main-color
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        position: relative
+        opacity: 0
+        transition: 0.5s all
+        font-weight: normal
+        border-radius: 2%
+        border: none
+    &__text
+        text-align: center
+        font-size: 25px
+        font-weight: normal
+    &__cross
+        top: 15px
+        font-size: 30px
+        right: 15px
+        position: absolute

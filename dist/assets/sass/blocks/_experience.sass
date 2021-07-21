@@ -1,0 +1,85 @@
+.experience
+	padding-top: 65px
+	&__title
+		margin-left: 35px
+		position: relative
+		margin-bottom: 0
+		@include circle
+		&::before
+			content: ""
+			position: absolute
+			left: -50px
+			width: 15px
+			height: 15px
+			top: 50%
+			transform: translateY(-50%)
+
+	&__block
+		display: grid
+		column-gap: 136px
+		grid-template-columns: 1fr 1fr
+		padding: 60px 65px 0 65px
+	&__list
+		list-style-type: none
+		display: grid
+		padding: 0
+		position: relative
+		margin-bottom: 0
+
+		li
+			position: relative
+			padding: 30px 0 0 43px
+			&::after
+				content: ""
+				width: 1px
+				height: calc(100% + 22px)
+				position: absolute
+				top: -23px
+				left: -8px
+				background-color: #000
+
+	&__wrapper
+		display: grid
+		column-gap: 14px
+		grid-template-columns: 40px auto
+		position: relative
+		&::before
+			content: ""
+			width: 48px
+			height: 1px
+			background-color: #000
+			transform: rotate(180deg)
+			position: absolute
+			left: -49px
+			top: 56%
+		img
+			margin: 90% 0 0 30%
+
+	&__item
+		&_title
+			line-height: 21px
+		&_titles
+			position: relative
+			margin-top: 12px
+			@include circle
+			&::before
+				left: -56px
+				top: 50%
+				transform: translateY(-50%)
+		&_descr
+			font-weight: 500
+			font-size: 12px
+			line-height: 20px
+			color: #000000
+			margin-top: 15px
+			&_a
+				font-weight: 500
+				font-size: 12px
+				line-height: 20px
+				color: #000000
+				margin-top: 15px
+				transition: 0.5s all
+				text-decoration: none
+				&:hover
+					text-decoration: none
+					color: $main-color

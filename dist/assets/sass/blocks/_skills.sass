@@ -1,0 +1,71 @@
+.skills
+    padding: 120px 10px 0 10px
+    &__img
+        width: 65px
+        &_react
+            width: 100%
+            height: 100%
+
+    &__items
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr))
+        grid-template-rows: repeat(auto-fit, minmax(270px, auto))
+        gap: 13px
+        margin-top: 60px
+    &__item
+        border: 1px solid #000000
+        box-sizing: border-box
+        padding: 30px
+        display: grid
+        grid-template-rows: 65px 21px minmax(94px, auto)
+    &__descr
+        font-style: normal
+        font-weight: 500
+        font-size: 12px
+        line-height: 18px
+        color: #000000
+        margin-top: 15px
+    &__title
+        font-weight: bold
+        font-size: 15px
+        line-height: 21px
+        color: $color
+        margin-top: 15px
+.progress
+    margin-top: 120px
+    &__wrapper
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr))
+        column-gap: 45px
+        row-gap: 30px
+        grid-template-rows: repeat(auto-fit, 70px)
+    &__header
+        display: flex
+        justify-content: space-between
+    &__title
+        line-height: 21px
+        margin-bottom: 27px
+        @include circle
+        &::before
+            top: -28%
+    &__percent
+        font-weight: 500
+        font-size: 14px
+        line-height: 21px
+        color: #000000
+
+    &__max
+        border-radius: 4px
+        width: 100%
+        height: 14px
+        background: #E8E4DE
+    &__div
+        position: relative
+    &__real
+        height: 14px
+        position: absolute
+        width: 0
+        background: $main-color
+        top: -2%
+        transition: 0.5s all
+        border-radius: 4px

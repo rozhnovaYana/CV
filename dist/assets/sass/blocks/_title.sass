@@ -1,0 +1,41 @@
+.title
+    font-weight: bold
+    line-height: 60px
+    position: relative
+    &_fs16
+        font-size: 16px
+        line-height: 24px
+        color: $color
+        z-index: 3
+    &_fs48
+        color: $color
+        font-size: 48px
+    &_fs36
+        color: $color
+        font-size: 48px
+    &_fs14
+        font-size: 14px
+    &_center
+        text-align: center
+    &_fs20
+        font-size: 20px
+        color: $color
+    &_fs12
+        font-size: 12px
+        font-weight: 500
+        line-height: 18px
+        color: $color
+    &_fs36
+        font-size: 36px
+        color: $color
+.header
+    &__title_main
+        position: relative
+        @include circle
+        &::before
+            left: 50%
+            transform: translateX(-50%)
+    &__subtitle
+        @include line
+        &::after
+            margin: 25px auto 0 auto
